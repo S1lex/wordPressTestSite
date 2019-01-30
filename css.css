@@ -197,6 +197,7 @@ h2 {
 	height: 370px;
 	width: auto;
 	position: relative;
+	padding: 0px;
 
 }
 
@@ -291,6 +292,7 @@ h2 {
 	width: auto;
 	height: auto;
 	max-height: 200px;
+	display: flex;
 }
 
 .startup-ideas {
@@ -328,27 +330,35 @@ h2 {
 }
 
 .brand-area {
+	padding: 85px 0;
 	background: #f8f8f8;
 }
 
-.brand-wr {
-	margin-top: 100px;
-	margin-bottom: 70px;
+.brand-area .brand-wr img {
+	text-align:center!important;
+	margin: auto;
+}
+
+.ds {
+	text-align: -webkit-center;
+	margin-bottom: 75px;
 }
 
 
-.brand-area .brand-wr img {
-	margin-right:55px;
+@media screen and (max-width: 425px) {
+.ds a {
+	margin-bottom: 15px;
+	} 
 }
 
 .brand-wr-text p {
 	font-size: 18pt;
 	color: #898989;
-	
+
 }
 
 .brand-wr-h {
-	margin-top: 45px!important;
+	margin-top: 10px!important;
 }
 
 .brand-wr-h h1 {
@@ -359,11 +369,164 @@ h2 {
 
 
 
+.adress-wr {
+	margin-bottom: 10px;
+}
+
+.adress-wr p {
+	font-size: 11pt;
+	color: #787878;
+	padding-left: 17px;
+}
+
+.address {
+	font-size: 14pt;
+	font-weight: 400;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.address-p {
+	font-size: 14pt;
+	font-weight: 400;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.address-p::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600; 
+	content: "\f3cd";
+	margin-right: 12px;
+}
+
+.address-m {
+	font-size: 14pt;
+	font-weight: 400;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.address-m::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 300; 
+	content: "\f0e0";
+	margin-right: 12px;
+}
+
+
+.address::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 600; 
+	content: "\f3c5";
+	margin-right: 12px;
+}
+
+
+.form-my-change {
+	border-color: black;
+	height: 40px!important;
+}
+
+.form-my-change:last-child {
+	border-color: black;
+	height: auto!important;
+}
+
+.form-my-change:focus {
+  width: 100%;
+  transition: 0.3s;
+  box-shadow:
+   0 0 0 2px rgb(211, 48, 7);
+}
+
+.button-send {
+	background: none;
+	border: solid 1px black;
+	color: black;
+	font-size: 11pt;
+	height: 35px;
+	padding: 5px;
+	outline: none!important;
+}
+
+.form-row p {
+	font-size: 10pt;
+	color: black;
+	margin: 0;
+	padding: 5px 0;
+}
+
+.form-row p::before {
+	content: "*  ";
+	color: red;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.margin-getIn {
+	margin-bottom: 90px;
+}
+
+.footer-wr {
+	background: #c0301c;
+	color: white;
+	margin: 0px;
+	height: 300px;
+}
+
+.footer {
+	padding-top: 90px;
+	margin-bottom: 60px;
+	color: white;
+}
+
+.footer span {
+	border:solid 2px white;
+	border-radius: 40px;
+}
 
 
 /* width navbar on small divice */
 @media screen and (max-width: 768px) {
 	nav {
 		margin: 0 25px!important;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.filter-li li {
+		margin: 0;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.filter-li {
+		display: block;
+	}
+	.call-wr h3 {
+		margin-top: 10%;
+		margin-bottom: 20px;
+	}
+	.active-work {
+		margin: 0px!important;
+	}
+	.active-work img {
+		width: 100%;
+	}
+	.text-wr-blog {
+		display: flex;
+		margin-top: 10px;
+	}
+	.brand-area .brand-wr img {
+		margin-bottom: 15px;
+	}
+	.bg-image-call {
+		background-repeat: no-repeat ;
+	-moz-background-size: contain;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+	background-size: contain; 
 	}
 }

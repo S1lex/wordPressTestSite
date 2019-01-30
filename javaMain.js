@@ -1,21 +1,27 @@
    $(document).ready(function(){
       $('.slider').bxSlider({
-        slideWidth: 300,
+        slideWidth: 250,
         slideHeight: 500,
+        infiniteLoop: true,
         minSlides: 2,
         maxSlides: 4,
         moveSlides: 1,
         slideMargin: 20,
         adaptiveHeight: true,
+        pager: false,
         prevText: '<i class="fas fa-angle-left"></i>',
         nextText: '<i class="fas fa-angle-right"></i>'
       });
-    });
 
-    $(document).ready(function(){
-      $('.bxsliders').bxSlider({
-        mode: 'fade',
-        captions: true,
-        slideWidth: 600
+      $(function(){
+        $('.bxslider').bxSlider({
+          mode: 'fade',
+          slideWidth: 1200,
+          pager: true,
+          controls: false,
+          slideHeight: 675,
+        });
       });
     });
+
+    
